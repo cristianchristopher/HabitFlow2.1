@@ -65,7 +65,7 @@ public class FraseMotivacionalActivity extends AppCompatActivity {
                 return;
             }
 
-            FraseMotivacional frase = new FraseMotivacional(); // ✅ Aquí usas la clase correcta
+            FraseMotivacional frase = new FraseMotivacional();
             frase.setFrase(textoFrase);
             frase.setAutor(textoAutor);
             frase.setFechaCreacion(new Date());
