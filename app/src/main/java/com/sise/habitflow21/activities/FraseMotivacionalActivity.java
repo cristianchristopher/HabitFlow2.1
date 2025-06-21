@@ -21,7 +21,7 @@ import java.util.Date;
 public class FraseMotivacionalActivity extends AppCompatActivity {
 
     private FraseViewModel fraseViewModel;
-    private EditText etFrase, etAutor; // ✅ Declaración necesaria
+    private EditText etFrase, etAutor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,8 +29,8 @@ public class FraseMotivacionalActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_frase_motivacional);
 
-        etFrase = findViewById(R.id.etFrase); // ✅ Debe existir en tu layout
-        etAutor = findViewById(R.id.etAutor); // ✅ Debe existir en tu layout
+        etFrase = findViewById(R.id.etFrase);
+        etAutor = findViewById(R.id.etAutor);
 
         fraseViewModel = new ViewModelProvider(this).get(FraseViewModel.class);
         observarFraseViewModel();
